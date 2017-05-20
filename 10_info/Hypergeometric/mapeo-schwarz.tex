@@ -1,0 +1,37 @@
+% ----------------------------------------------------------------
+% Report Class (This is a LaTeX2e document)  *********************
+% ----------------------------------------------------------------
+\documentclass[11pt]{report}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+% ----------------------------------------------------------------
+\begin{document}
+
+\chapter{Mapeo de Schwarz}
+
+\section{1}
+
+Dadas dos soluciones linealmente independientes $u_{1},u_{2}$ de la ecuaci\'on lineal hipergeometrica, definimos un mapeo multivaluado:
+
+$$s: \mathbb{C}-\lbrace 0,1\rbrace \ni x \longmapsto u_{1}(x):u_{2}(x) \in \mathbb{P}^{1} := \mathbb{C} \cup \lbrace \infty \rbrace $$
+
+Conocido como el mapeo de Schwarz (o mapeo-s de Schwarz ). (Las dos soluciones no se anulan al mismo tiempo ). Dadas las caracteristicas de nuestro estudio, nos interesa este mapeo cuando los exponentes son puramente imaginarios (es decir de la forma $i \theta, \theta \in \mathbb{R} $), lo que sucede con este mapeo cuando los exponentes son reales ya ha sido estudiado y se puede encontrar en [Yoshida 1997 ]. El objetivo al introducir este mapeo es, primero; hallar dominios fundamentales para que el mapeo sea $1-1$. Y segundo; a trav\'es de estos dominios fundamentales y el principio de reflexi\'on de Schwarz aplicado a sus lados podemos obtener una descripci\'on especial del grupo de monodromia que ser\'a \'util para nuestros prop\'ositos. \\ 
+
+Encontraremos un dominio $F_{x}$ en el $plano-x$ y un dominio $F_{s}$ en el $plano-s$ tal que el mapeo 
+
+$$s|_{F_{x}}:F_{x} \rightarrow F_{s} $$ 
+
+sea biholomorfo y el mapeo $s$ pueda ser recuperado totalmente de $ s|_{F_{x}} $ a trav\'es de la aplicaci\'on del principio de reflexi\'on de Schwarz  a los lados de $F_{x}$.
+
+\end{document}
+% ----------------------------------------------------------------

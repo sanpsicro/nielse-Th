@@ -1,0 +1,54 @@
+
+% Thesis Abstract -----------------------------------------------------
+
+
+%\begin{abstractslong}    %uncommenting this line, gives a different abstract heading
+
+
+\begin{abstracts}        %this creates the heading for the abstract page
+\selectlanguage{british}
+% Put your abstract or summary here.
+
+Cuando tenemos una ecuaci\'on diferencial de grado $n$, sabemos gracias a Cauchy que posee $n$ soluciones linealmente independientes en un punto $b \in \mathbb{C}$, si tomamos una de estas soluciones y la continuamos analiticamente por un lazo anclado en $a$ obtenemos una soluci\'on que depende de las n soluciones linealmente independientes dadas, gracias a este hecho, podemos de igual manera asociar un grupo a la ecuaci\'on diferencial dada, este grupo visto en $GL(2,\mathbb{C})$ contiene las matrices que relacionan a la soluci\'on original y a la continuaci\'on anal\'itica.\\
+
+\begin{figure}[h]
+  \centering
+  % Requires \usepackage{graphicx}
+  \includegraphics[width=10cm]{abstract-dibujo1}\\
+  \caption{Continuaci\'on anal\'itica}
+\end{figure}
+
+
+
+
+El grupo de monodrom\'ia nos da informaci\'on importante [agregar mas] de la ecuaci\'on diferencial.En general hallar la monodrom\'ia relativa a una ecuaci\'on diferencial no es una tarea sencilla [mencionar frobenious y otros]. Dado este hecho, nos proponemos a hallar y dar de manera expl\'icita la monodrom\'ia y el grupo de monodrom\'ia de la ecuaci\'on diferencial hipergeom\'etrica
+ 
+ $$x(1-x)\frac{d^{2}u}{dx^{2}} +  \lbrace c- (a+b+1 )x \rbrace \frac{du}{dx} - abu=0 $$
+
+ Por medio de una combinaci\'on de t\'ecnicas recopiladas de numerosos textos, adem\'as de dar un conjunto de soluciones para $b=\frac{1}{2}$.\\
+
+
+
+El grupo de monodrom\'ia de la ecuaci\'on hipergeom\'etrica tiene una estructura de grupo de Schottky cuando tomamos los exponentes puramente imaginarios [explicacion mas amplia]\\
+
+
+Como \'ultima parte nos enfocamos en el teorema de Nielsen sobre discretitud de grupos de transformaciones y tomamos nuestro grupo de Schottky como un ejemplo donde aplica este teorema ....
+
+
+\end{abstracts}
+
+%\begin{resumen}        %this creates the heading for the abstract page
+%\selectlanguage{spanish}
+% Pon tu resumen aquí.
+%\end{resumen}
+
+
+%\begin{laburpena}        %this creates the heading for the abstract page
+%\selectlanguage{basque}
+% Jarri zure laburpena hemen.
+%\end{laburpena}
+
+%\end{abstractlongs}
+
+
+% ----------------------------------------------------------------------

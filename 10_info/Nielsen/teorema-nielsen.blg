@@ -1,0 +1,10 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: teorema-nielsen.aux
+The style file: amsplain.bst
+I couldn't open database file a.bib
+---line 10 of file teorema-nielsen.aux
+ : \bibdata{a
+ :           }
+I'm skipping whatever remains of this command
+I found no \citation commands---while reading file teorema-nielsen.aux
+I found no database files---while reading file teorema-nielsen.aux
+(There were 3 error messages)

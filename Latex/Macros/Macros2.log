@@ -1,0 +1,25 @@
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (MiKTeX 2.9 64-bit) (preloaded format=latex 2016.12.27)  10 JAN 2017 01:09
+entering extended mode
+**Macros.tex
+(Macros.tex
+LaTeX2e <2015/01/01> patch level 2
+Babel <3.9m> and hyphenation patterns for 69 languages loaded.
+\figwidth=\skip41
+\anchoFigura=\skip42
+\anchoFloat=\skip43
+)
+! Emergency stop.
+<*> Macros.tex
+              
+*** (job aborted, no legal \end found)
+
+ 
+Here is how much of TeX's memory you used:
+ 26 strings out of 493674
+ 293 string characters out of 3143991
+ 52452 words of memory out of 3000000
+ 3474 multiletter control sequences out of 15000+200000
+ 3640 words of font info for 14 fonts, out of 3000000 for 9000
+ 1025 hyphenation exceptions out of 8191
+ 7i,0n,12p,128b,8s stack positions out of 5000i,500n,10000p,200000b,50000s
+No pages of output.

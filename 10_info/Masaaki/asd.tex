@@ -1,0 +1,94 @@
+% ----------------------------------------------------------------
+% Report Class (This is a LaTeX2e document)  *********************
+% ----------------------------------------------------------------
+\documentclass[11pt]{report}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[chapter]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+% ----------------------------------------------------------------
+\begin{document}
+
+\chapter{}
+
+\section{1}
+
+consideremos la ecuaci\'on hypergeom\'etrica $$x(1-x)\frac{d^{2}u}{dx^{2}} +  \lbrace c- (a+b+1 )x \rbrace \frac{du}{dx} - abu $$
+
+con exponentes imaginarios puros $$ 1-c = i\theta_{0}, c-a-b = i \theta_{1}, a-b=i\theta_{2}  $$ (Los exponentes son por las soluciones  )
+
+Donde supondremos $\theta_{0}, \theta_{1} , \theta_{2} > 0$. Para cualesquiera dos soluciones linealmente independientes $u_{1}$ y $u_{2}$ tenemos el mapeo multivaluado $$s: \mathcal{C} -\lbrace0,1  \rbrace \ni x \mapsto u_{1}(x):u_{2}(x) \in \mathcal{P} := \mathcal{C} \cup \lbrace \infty \rbrace $$ llamado el mapeo de Schwarz.
+
+\section{2}
+
+Para nuestros propositos hallaremos un dominio en el plano-x y un dominmio en el plano-s (estos aun no los coloco aqui ya que no termino de dibujarlos aun) tal que el mapeo $$ s|_{F_{x}}: F_{x} \rightarrow F_{s}$$ es un biholomorfismo (conformally isomorphic) y el mapeo $s$ se puede recuperar via el mapeo restringido $s|_{f_{x}}$ a traves del principio de reflexi\'on de Schwarz, estos se llaman dominios fundamentales para el mapeo de Schwarz. \\ \\
+
+
+Denotemos por $C(c,r)$ el circulo en el plano $s$ con centro $c$ y radio $r$ y considerense los tres circulos disjuntos en el plano $s$ $$ C_{1} = C(0,1), C_{2}=C(0,T), C_{3}= C(-C,R)$$ Donde $T=e^{\theta_{1} \pi}, r= e^{-\theta_{0} \pi}$ $$ C=\frac{\xi (1-r^{2})}{\xi^{2}-r^{2}},R=\frac{r(1-\xi^{2})}{\xi^{2}-r^{2}}, \xi =( \frac{cosh \theta_{2} \pi + cosh(\theta_{0}-\theta_{1}) \pi}{cosh \theta_{2} \pi + cosh(\theta_{0} + \theta_{1})\pi} )^{\frac{1}{2}}$$
+
+
+Cuando $\theta_{2} = 0$  $Cosh (\theta_{0}-\theta_{1})\pi = \frac{1+(rt)^{2}}{2rT}$ y $Cosh( \theta_{0} + \theta_{1})\pi = \frac{r^{2} + T^{2}}{2rT}$  y tambi\'en $Cosh\theta_{2}\pi = 1 $ por lo que $\xi^{2}|_{\theta_{2}=0} = \frac{1 + \frac{1 + (rt)^{2}}{2rT}}{ 1 + \frac{r^{2 } + T^{2}}{2rT}} = \frac{\frac{2rT + 1 + (rt)^{2}}{2rT}}{\frac{2rT + r^{2} + T^{2}}{2rT}}= \frac{T^{2} + 2rT +1}{r^{2} + 2rT + T^{2}} = \frac{(rT  + 1)^{2}}{(r + T)^{2}}$ entonces $\xi|_{\theta_{2}=0} = \frac{Tr + 1}{ T +r}$
+
+Ya que $T>1$ y $r <1$ tenemos por un lado $r^{2}<1$ entonces $Tr + r^{2} < Tr + 1$, es decir, $r(T+r)< Tr +1$, entonces;$r<\frac{Tr + 1}{T+r}$.
+
+Por otro lado; $r<1$ y tambi\'en $T-1>0$ por lo que $(T-1)r < T-1$ entonces $Tr-r < T-1$ y luego $Tr +1 < T+r$ por lo que $\frac{Tr +1}{T +r} < 1$
+Dado que $\xi $ como una funci\'on de $\theta_{2} \geq 0$ incrementa de manera mon\'otona a 1 y $$1 > \xi |_{\theta_{2} =0} = \frac{Tr+1}{T+r} > r $$
+
+tenemos
+
+$$C-R-1 =\frac{\xi(1-r^{2})}{\xi^{2}-r^{2}} - \frac{r(1-\xi^{2})}{\xi^{2}-r^{2}}-1= \frac{\xi-\xi r^{2} -r + r\xi^{2}-\xi^{2} - r^{2}}{\xi^{2} - r^{2}}= \frac{\xi-r + \xi r(-r + \xi)-(\xi -r)(\xi + r)}{ \xi^{2} - r^`{2}}= \frac{(\xi -r)(1 + \xi r - (\xi +r))}{(\xi +r)(\xi -r)}=\frac{1 + \xi r -(\xi +r)}{\xi +r}=\frac{(1-r)(1-\xi)}{\xi +r} > 0  $$
+
+$$T-C-R =\frac{(T+r)\xi - (Tr +1)}{\xi -r} >0$$
+
+y tenemos
+
+$$-T < -C -R < -C + R < -1< 1< T $$
+
+El dominio en el semi-plano superior, acotado por $C_{1}, C_{2}, C_{3}$ y el eje real, puede servir como un dominio fundamental $F_{s}$, y tiene la forma de un puente de doble arco como en la figura 1. El dominio fundamental $F_{x}$ tambi\'en tiene la forma de de un  puente de doble arco como en la figura 1, y esta acotado por tres segmentos reales y tres curvas que no son parte de circunferencias.
+
+\section{4} El grupo de monodromia
+
+Gracias a estos dominios fundamentales y el principiuo de reflexion de Schwars aplicado a lo largo de los lados, el grupo de monodromia de la ecuacion diferencial se puede describir como sigue; La reflexi\'on con respecto al circulo $C(c,r)$ donde $c$ es real, esta dada por  $$\psi(c,r): s \mapsto \frac{r^{2}}{\bar{s} - c}  $$
+
+Sea $\bar{\lambda}$ el grupo generado por las tres reflexiones respecto a los circulos $C_{1},C_{2},C_{3}$, respectivamente. El grupo de monodromia $\lambda_{\theta}$ de la ecuaci\'on hypergeometrica es el subgrupo de $\bar{\lambda}$, de indice 2 que consiste de las palabras pares de $\psi_{1},\psi_{2}, \psi_{3}$.
+
+Por otro lado, para el circulo $C(c,r)$ definimos la transformaci\'on fraccional lineal de orden 2 que fija los dos puntos de intersecci\'on del circulo y el eje real: $$\gamma (c,r): s \mapsto \frac{r^{2}}{s-c} + c $$
+
+
+Sea $\Gamma _{\theta}, \theta ) (\theta_{0},\theta_{1},\theta_{2})$ el grupo generado por tres involuciones $\gamma_{1},\gamma_{2},\gamma_{3}$ con respecto a los circulos $C_{1},C_{2},C_{3}$, respectivamente.
+El grupo de monodromia $\lambda_{\theta }$ es el subgrupo de $\gamma_{\theta}$, de indice 2 que consiste de las palabras pares de $\gamma_{1},\gamma_{2},\gamma_{3}$. Sea $\omega ( \subset \mathcal{P^{1}})$ el dominio de discontinuidad de $\gamma_{\theta}$ y el grupo de Schotky $\gamma_{\theta}$.
+
+Esta representaci\'on tiene algunos problemas, aunque la ecuaci\'on hipérgeometrica es sim\'etrica respecto de $\theta_{0},\theta_{1},\theta_{2}$, los tres circulos $C_{1},C_{2},C_{3}$ no lo son. Por ejemplo si $\theta_{2} \rightarrow 0$ los circulos $C_{2}$ y $C_{3}$ se tocan, y si $\theta_{1} \rightarrow 0$ entonces $C_{3}$ tiende a un punto y $C_{1}$ y $C_{2}$ coinciden, m\'as a\'un ya que $C_{1}$  y $C_{2}$ son concentricos ....Hacemos un cambio de coordenadas como sigue : $$s \mapsto \frac{(3 + T^{2})s + 1 + 3T^{2}}{4(s + T^{2})} $$ entonces los diametros de los circulos en el eje real estan dados por  $$ C_{1}:[s_{4},s_{5}],C_{2}:[s_{1},s_{6}],C_{3}:[s_{2},s_{3}]$$ figura 2
+
+Donde $$s_{1} = - \frac{(1-T)^{2}}{4T} , s_{2}= - \frac{(T-1)^{3} - (3 + T^{2})(T-C-R)}{4(T^{2} - T + T -C-R)}$$
+
+
+
+$$s_{3}= -\frac{(1+T^{2})(C-R-1)}{4(T^{2}-1-(C-R-1))} + \frac{1}{2}, s_{4} = \frac{1}{2} $$
+
+$$s_{5} = 1 , s_{6} = \frac{(1+ T)^{2}}{4T} $$
+
+
+Notemos que $s_{1}< s_{2}< \cdots < s_{6}$ Ahora podemos probar lo siguiente:
+
+\begin{prop} Si $\theta_{1} = 0$ entonces $C_{1}$  y $C_{2}$ se tocan en un punto; Si $\theta_{2} = 0 $ entonces $C_{2}$ y $C_{3}$ se tocan en un punto; Y si $\theta_{0} = 0$, entonces $C_{3}$ y $C_{1}$ se tocan en un punto  
+\end{prop}
+
+\textit{Prueba.}
+
+Cuando $\theta_{1} = 0$, notemos que en este caso $T = e^{\theta_{1} \pi}$ y dado que $\theta_{1} = 0$ se tiene que $T =1$, tambi\'en recordemos que $C_{1}:[s_{4},s_{5}]$ y $C_{2}: [s_{1}, s_{6}]$ y dado que $s_{5} = 1 $ y $s_{6} = \frac{(1+ T^{2})^{2}}{4T} = \frac{(1 + 1^{2})^{2}}{4} = \frac{4}{4} = 1$ es decir $C_{1}$ y $C_{2}$ se tocan en $1$.
+
+Si $\theta_{2} = 0$,primero veremos que $T-C-R = 0$, como $\theta_{2}=0$ entonces $\xi = \frac{Tr +1}{ T + r}$ esto implica que $(T+r) \xi = Tr +1$ y como $T-C-R = \frac{(T+r)\xi - (Tr+1)}{ \xi -r} = \frac{Tr+1 - ( Tr+1)}{\xi - r} =0$, Ahora bien $s_{1} = -\frac{1-T^{2}}{4T}$ y $s_{2} = -\frac{(T-1)^{3} - (3 + T^{2})(T-C-R)}{ 4(T^{2} - T + T-C-R)} =- \frac{(T-1)^{3}}{4(T^{2} - T)} =- \frac{(T-1)^{2} (T-1)}{4T (T-1)} = -\frac{(T-1)^{2}}{4T}= s_{1} $ por lo que $C_{2}$ y $C_{3}$ se tocan en $s_{1}$.
+
+Por \'ultimo si $\theta_{0} = 0$ tenemos $r=e^{-\theta_{0} \pi }$ en este caso $r = 1$ mostremos que $C-R-1=0$. $C-R-1 = \frac{(1-r)(1- \xi)}{ \xi + r}= 0$ ya que $r = 1$, entonces $ s_{3} = \frac{(1+T^{2})(C-R-1)}{ 4(T^{2} -1 -C-R-1)} + \frac{1}{2} = \frac{1}{2}$ ya que $C-R-1 = 0$ y dado que $C_{3}:[s_{2},s_{3}]$ y  $ C_{1}:[s_{4},s_{5}]$ por los calculos anteriores obtuvimos $s_{4}= s_{3}$ (recordando que $s_{4} = \frac{1}{2}$), Concluyendo con la prueba.
+ 
+\end{document}
+% ----------------------------------------------------------------

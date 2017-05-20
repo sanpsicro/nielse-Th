@@ -1,0 +1,32 @@
+\begin{thebibliography}{SY01}
+
+\bibitem[ACS]{Kleniangroups}
+Juan Pablo~Navarrete Angel~Cano and José Seade.
+\newblock Complex klenian groups.
+
+\bibitem[Bea]{Beardon}
+Alan~F. Beardon.
+\newblock The geometry of discrete groups.
+
+\bibitem[FN]{Nielsen}
+W.~Fenchel and J.~Nielsen.
+\newblock On discontinuous groups of isometric transformations of the
+  non-euclidian plane.
+
+\bibitem[IY03]{Masaaki}
+Takashi Ichikawa and Masaaki Yoshida.
+\newblock On schottky groups arising from the hypergeometric equation with
+  imaginary exponents.
+\newblock {\em American Mathematical Society}, 132(2):447--454, 2003.
+
+\bibitem[KIY]{gausspainleve}
+Shun~Shimomura Katsunori~Iwasaki, Hironobu~Kimura and Maasaki Yoshida.
+\newblock From gauss to painlevé.
+
+\bibitem[SY01]{geometricstudy}
+Takeshi Sasaki and Maasaki Yoshida.
+\newblock A geometric study of the hypergeometric function with imaginary
+  exponents.
+\newblock {\em Experimental Mathematics}, 2001.
+
+\end{thebibliography}

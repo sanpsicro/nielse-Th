@@ -1,0 +1,160 @@
+% This file was created with JabRef 2.7b.
+% Encoding: UTF8
+
+@ARTICLE{Kleniangroups,
+  author = {Angel Cano, Juan Pablo Navarrete and José Seade},
+  title = { Complex Klenian Groups},
+  %journal = {Mind},
+  %year = {1950},
+  %volume = {59},
+  %pages = {433--460},
+  %number = {236},
+  publisher = {JSTOR}
+}
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
+
+@ARTICLE{Beardon,
+  author = {Alan F. Beardon},
+  title = {The Geometry of Discrete groups},
+ % journal = {Mind},
+  year = {1983},
+  %volume = {59},
+  %pages = {433--460},
+  %number = {236},
+  publisher = {Springer}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
+
+@ARTICLE{Klenian,
+  author = {Turing, A.M.},
+  title = {Kleinian Groups},
+  journal = {Mind},
+  year = {1950},
+  volume = {59},
+  pages = {433--460},
+  number = {236},
+  publisher = {JSTOR}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
+
+@ARTICLE{Mylove,
+  author = {Maasaki Yoshida}
+  title = {Hypergeometric Functions, My Love},
+  %journal = {Mind},
+  year = {1997},
+  %volume = {59},
+  %pages = {433--460},
+  %number = {236},
+  publisher = {Vieweg}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
+
+@ARTICLE{Nielsen,
+  author = {W. Fenchel and J. Nielsen},
+  title = {ON DISCONTINUOUS GROUPS OF ISOMETRIC TRANSFORMATIONS OF THE NON-EUCLIDIAN PLANE},
+  %journal = {Mind},
+  year = {1948},
+  %volume = {59},
+  %pages = {433--460},
+  %number = {236},
+  %publisher = {JSTOR}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
+
+@ARTICLE{Masaaki,
+  author = {Takashi Ichikawa and Masaaki Yoshida},
+  title = {ON SCHOTTKY GROUPS ARISING FROM THE HYPERGEOMETRIC EQUATION WITH IMAGINARY EXPONENTS},
+  journal = {American Mathematical Society},
+  year = {2003},
+  volume = {132},
+  pages = {447--454},
+  number = {2},
+ % publisher = {JSTOR}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
+
+@ARTICLE{spaceklenian,
+  author = {Turing, A.M.},
+  title = {space of klenian groups},
+  journal = {Mind},
+  year = {1950},
+  volume = {59},
+  pages = {433--460},
+  number = {236},
+  publisher = {JSTOR}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}
+
+
+@ARTICLE{gausspainleve,
+  author = {Katsunori Iwasaki,Hironobu Kimura,Shun Shimomura and Maasaki Yoshida},
+  title = {From Gauss to painlevé},
+  %journal = {Mind},
+  year = {1991},
+  %volume = {59},
+  %pages = {433--460},
+  %number = {236},
+  publisher = {Vieweg}
+}
+
+@comment{jabref-meta: selector_publisher:}
+
+@comment{jabref-meta: selector_author:}
+
+@comment{jabref-meta: selector_journal:}
+
+@comment{jabref-meta: selector_keywords:}

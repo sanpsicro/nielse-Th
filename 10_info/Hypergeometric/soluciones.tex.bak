@@ -1,0 +1,80 @@
+% ----------------------------------------------------------------
+% Article Class (This is a LaTeX2e document)  ********************
+% ----------------------------------------------------------------
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+% ----------------------------------------------------------------
+\begin{document}
+
+\title[1]{2}%
+\author{San}%
+
+% ----------------------------------------------------------------
+\begin{abstract}
+  qq
+\end{abstract}
+\maketitle
+% ----------------------------------------------------------------
+\section{La serie hipergeometrica }
+
+Consideremos la siguiente serie :
+
+$$F(a,b,c;x)= \sum_{n=0}^{\infty } \frac{(a)_{n} (b)_{n}}{(c)_{n}(1)_{n}} x^{n}$$
+
+En donde $(\alpha)_{n} = \alpha (\alpha +1)(\alpha +2)\cdots (\alpha +n-1)$, %cuando n= 0? %
+
+y $c \neq 0, -1, -2,...$. Esta serie es la llamada serie hipergeometrica.  El coeficiente $n$-esimo de esta serie al que llamaremos $A_{n}$ esta dado por $$A_{n}=\frac{a(a+1)\cdots (a+n-1) \cdot b(b+1)\cdots(b +n -1) }{c(c+1)\cdots (c+n-1) \cdot 1 (1+1) \cdots (n)}$$ De esta igualdad obtenemos:
+
+$$\frac{A_{n+1}}{A_{n}}= \frac{(a+n)(b+n)}{(c+n)(1+n)}$$
+
+Usando el criterio %del cociente%
+Podemos notar que el radio de convergencia de esta serie es 1, excepto en el caso de que $a$ o $b$ sean negativos ya que en cualquiera de estos casos la serie es finita. De cualquier modo tenemos que dicha serie define una funci\'on holomorfa en $x$ en al menos el disco de radio 1 centrado en 0 y tambi\'en es holomorfa en $(a,b,c)$ si $c \neq 0, -1, -2,...$ \\
+
+Nuestro interes por la serie definida anteriormente viene del hecho que dicha serie es una soluci\'on de la ecuaci\'on diferencial hipergeometrica
+
+$$ x(1-x)\frac{d^{2}u}{dx^{2}} + \lbrace c- (a+b+1)x \rbrace \frac{du}{dx} -abu=0 $$
+
+ A la cual denotaremos $E(a,b,c;x)$. Para ver esto procederemos como Euler e introducimos el operador $ D = x \frac{d}{dx}$ y enunciamos algunas de sus propiedades que ser\'an \'utiles:
+
+\begin{enumerate}
+\item $Dx^{n}= nx^{n}$
+\item $f(D)x^{n}=f(n)x^{n}$ donde $f$ es un polinomio de coeficientes constantes
+\end{enumerate}
+
+La propiedad n\'umero 1 es clara de la definici\'on, para la propiedad n\'umero 2 debemos dejar en claro como funciona el operador $D^{n}$ al aplicarlo a $x^{n}$. Cuando $n=2$ tenemos que $D^{2} x^{n} = x\frac{d}{dx} (x\frac{d}{dx} (x^{n}) )= x\frac{d}{dx}(x \cdot nx^{n-1})=x\frac{d}{dx} (nx^{n} ) = x\cdot n^{2}x^{n-1}=n^{2}x^{n}$, en general se tiene por un proceso an\'alogo al anterior que $D^{m}x^{n}=n^{m}x^{n}$.Sea
+
+$$ f(x)= \sum_{i=0}^{n} a_{i}x^{i} $$
+
+Donde $a_{n} \neq 0$, un polinomio de grado n y por $f(D)$ entendemos el operador $$f(D) = \sum_{i=0}^{n} a_{i}D^{i}$$
+
+Entendiendo $D^{i}$ como la composici\'on del operador $D$ $i$-veces consigo mismo. Aplicamos este operador a $x^{n}$ y obtenemos
+
+$$f(D)x^{n}=(\sum_{i=0}^{n}a_{i}D^{i}) x^{n} = \sum_{i=0}^{n}a_{i} D^{i}( x^{n}) = \sum_{i=0}^{n}a_{i}n^{i}x^{n} = f(n)x^{n}   $$
+
+
+Gracias a este operador $D$ podemos escribir la ecuaci\'on diferencial hipergeom\'etrica en t\'erminos de dicho operador para obtener;
+
+$$E(a,b,c): [(a+D)(b+D)- (c+D)(1+D)\frac{1}{x}]u=0$$
+
+Con esta nueva presentaci\'on verificamos que la serie $F(a,b,c;x)$ es una soluci\'on de dicha ecuaci\'on.
+
+Podemos escribir 
+
+$$F(a,b,c;x)= \sum_{n=0}^{\infty } \frac{(a)_{n} (b)_{n}}{(c)_{n}(1)_{n}} x^{n} = \sum A_{n} x^{n}$$
+
+
+
+\end{document}
+% ----------------------------------------------------------------

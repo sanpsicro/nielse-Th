@@ -1,0 +1,54 @@
+This is BibTeX, Version 0.99dThe top-level auxiliary file: dissertation.aux
+A level-1 auxiliary file: 0_frontmatter/abstract.aux
+A level-1 auxiliary file: 1_Ecu_dif_hip/0_index.aux
+A level-1 auxiliary file: 2_Monodromia/0_index.aux
+A level-1 auxiliary file: 3_Grupo_Schottky/0_index.aux
+A level-1 auxiliary file: 4_Teorema_Nielsen/0_index.aux
+A level-1 auxiliary file: 5_apendice/0_index.aux
+The style file: alpha.bst
+A level-1 auxiliary file: 9_backmatter/declaration.aux
+Database file #1: 9_backmatter/references.bib
+You're missing a field name---line 7 of file 9_backmatter/references.bib
+ :   
+ :   %journal = {Mind},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 26 of file 9_backmatter/references.bib
+ :  
+ :  % journal = {Mind},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+I was expecting a `,' or a `}'---line 65 of file 9_backmatter/references.bib
+ :   
+ :   title = {Hypergeometric Functions, My Love},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 86 of file 9_backmatter/references.bib
+ :   
+ :   %journal = {Mind},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 111 of file 9_backmatter/references.bib
+ :  
+ :  % publisher = {JSTOR}
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 146 of file 9_backmatter/references.bib
+ :   
+ :   %journal = {Mind},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+You're missing a field name---line 167 of file 9_backmatter/references.bib
+ :   
+ :   %volume = {59},
+(Error may have been on previous line)
+I'm skipping whatever remains of this entry
+Warning--empty journal in Kleniangroups
+Warning--empty year in Kleniangroups
+Warning--empty journal in Beardon
+Warning--empty year in Beardon
+Warning--empty journal in Nielsen
+Warning--empty year in Nielsen
+Warning--empty journal in gausspainleve
+Warning--empty year in gausspainleve
+(There were 7 error messages)

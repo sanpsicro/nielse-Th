@@ -1,0 +1,796 @@
+% ----------------------------------------------------------------
+% AMS-LaTeX Paper ************************************************
+% **** -----------------------------------------------------------
+\documentclass{amsart}
+\usepackage{graphicx}
+\usepackage{color}
+\usepackage{amsmath}
+\usepackage[psamsfonts]{amssymb}
+% ----------------------------------------------------------------
+\vfuzz2pt % Don't report over-full v-boxes if over-edge is small
+\hfuzz2pt % Don't report over-full h-boxes if over-edge is small
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+% MATH -----------------------------------------------------------
+\newcommand{\norm}[1]{\left\Vert#1\right\Vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
+\newcommand{\set}[1]{\left\{#1\right\}}
+\newcommand{\Real}{\mathbb R}
+\newcommand{\eps}{\varepsilon}
+\newcommand{\To}{\longrightarrow}
+\newcommand{\BX}{\mathbf{B}(X)}
+\newcommand{\A}{\mathcal{A}}
+% ----------------------------------------------------------------
+\begin{document}
+
+\AmS -\LaTeX
+
+\title[Nielsen]{Nielsen}%
+\author{san}%
+%\address{}%
+%\email{}%
+
+%\thanks{}%
+%\subjclass{}%
+%\keywords{}%
+
+%\date{}%
+%\dedicatory{}%
+%\commby{}%
+% ----------------------------------------------------------------
+\begin{abstract}
+a
+\end{abstract}
+\maketitle
+% ----------------------------------------------------------------
+\section{0}
+
+Grupos propiamente discontinuos de transformaciones fraccionales
+lineales con c\'irculo principal en el sentido de la teor\'ia de
+automorfismos. \\
+
+transformaciones en el plano hiperb\'olico, caracterizaci\'on de
+grupos discontinuos de los anteriores. \\
+
+Las lineas rectas y \'angulos se trataran como en el sentido de
+poincar\'e. \\
+
+Todas las cosecuencias geom\'etricas se entenderan en el sentido
+no-euclidio. \\
+
+Utilizaremos el modelo del disco de Poincar\'e $S^{1}$ cuyo interior
+le denominaremos $D$ y cuya frontera le denominaremos  $E$.
+
+Se llamar\'an puntos finales a los extremos de una recta situados en
+el c\'irculo infinito. \\
+
+Identificaremos tres tipos de relaciones entre las rectas, a saber,
+concurrentes, paralelas y divergentes. \\
+
+Las rectas \texttt{paralelas} son dos rectas que tienen un punto
+final en com\'un.\\
+
+Las rectas \texttt{concurrentes } son las que se intersectan en $D$.
+\\
+
+Las rectas \texttt{divergentes} son las que no se intersectan en
+nigun lugar. \\
+
+\textcolor[rgb]{1.00,0.00,0.00}{Dibujos} \\
+
+Los \texttt{orociclos} son circulos tangeentes a alg\'un punto en la
+frontera $E$ de $S^{1}$. Estos no son geod\'esicas. \\
+
+
+Los \texttt{hiperciclos} se forman dada una recta $\emph{L}$ y un
+punto $\textbf{P}$ fuera de ella se considera el lugar geom\'etrico
+de todos los puntos a distancia $d_{H}(\textbf{P},\emph{L})$ de
+$\emph{L}$ y del mismo lado de $P$
+(\textcolor[rgb]{1.00,0.00,0.00}{Cualquier geod\'esica determina dos
+lados}). De igual manera los hyperciclos no son geod\'esicas. \\
+
+\textbf{Transformaciones isom\'etricas} \\
+
+Dividiremos las transformaciones isom\'etricas en dos grupos, los
+que preservan la orientaci\'on y los que no. En el grupo de los que
+preservan la orientaci\'ion distinguimos tres tipos distintos de
+transformaciones; \\
+
+Las transformaciones \texttt{parab\'olicas} tienen un punto fijo en
+$E$ y dado un orociclo $K$ tangente en dicho punto fijo a $E$, esta
+transformaci\'on tiene un desplazamiento fijo en $K$.
+\textcolor[rgb]{1.00,0.00,0.00}{Dibujo} \\
+
+Las tranformaciones \texttt{el\'ipticas} tienen un punto fijo en $D$
+y un \'angulo fijo $\phi$ de rotaci\'on en torno al punto fijo.
+\textcolor[rgb]{1.00,0.00,0.00}{Dibujo} \\
+
+Las transformaciones \texttt{hiperb\'olicas} tienen dos puntos fijos
+en $E$ y una recta invariante, la recta que pasa por dichos puntos
+fijos a la cual llamaremos eje de la transformaci\'on.
+\textcolor[rgb]{1.00,0.00,0.00}{Dibujo} \\
+
+$G$ es un grupo de transformaciones isom\'etricas, un punto
+invariante para $G$ si es fijo bajo todos los elementos de $G$, de
+una manera similar pensamos en una recta invariante. \\
+
+Un par de conjuntos $M$ y $M'$ en $D +E$ son equivalentes respecto a
+$G$ si existe $f \in G$ tal que $M = fM'$. El total de conjuntos
+equivalentes de $M$ se denota como la familia $GM$ llamada clase de
+equivalencia de $M$, en esta familia si $f_{1},f_{2} \in G  $ y
+$f_{1} \neq f_{2 }$ entonces $f_{1}M \neq f_{2}M$ sin importar que
+como conjunto sean iguales. \\
+
+Decimos que $G$ es discontinuo en un punto $x \in D$,si $x$ no es un
+punto de acumulaci\'on de la clase $Gx$, si esto sucede $Gx$ no
+tiene puntos de acumulaci\'on en $D$
+(\textcolor[rgb]{1.00,0.00,0.00}{Prueba}), esto implica que si $G$
+es discontinuo en un punto de  $D$ entonces es discontinuo en todo
+$D$. (\textcolor[rgb]{1.00,0.00,0.00}{prueba}). \\
+
+Las \'unicas isometr\'ias de $H^{+} $ que preservan la orientaci\'on
+son las de $PSL(2,\mathbb{R})$, las transformaciones mencionadas con
+anterioridad se encuentran en este grupo. \\
+
+Si $f \in PSL(2,\mathbb{R})$ y $g$ alguna otra transformaci\'on no
+necesariamente en $PSL(2, \mathbb{R})$ entonces $gfg^{-1}$ es del
+mismo tipo que $f$.\\ \\
+
+Llamaremos \texttt{reversiones} a las transformaciones que invierten
+la orientaci\'on, las reversiones son las \texttt{reflexiones}
+respecto a una recta, y las reflexiones compuestas con elementos
+hiperbolicos a las que llamaremos \texttt{h-reflexion}. \\ \\
+
+
+La reflexi\'on respecto a una recta hiperb\'olica es la reflexi\'on
+respecto a una circunferencia euclidiana. \\ \\
+
+
+\textbf{Teorema principal}
+
+\begin{thm}
+Una condici\'on necesaria y suficiente para que un grupo de
+transformaciones isom\'etricas en el plano hiperb\'olico sin puntos
+ni lineas invariantes sea discontinuo en $D $ es que los puntos
+fijos de los elementos elipticos del grupo, si los hay, no se
+acumulen en $D$
+
+\end{thm}
+
+La condici\'on de que no tenga puntos ni rectas invariantes es
+necesaria. \\ \\
+
+
+\textcolor[rgb]{1.00,0.00,0.00}{contraejemplo} \\
+
+Si $G$ es un grupo de elementos parab\'olicos con un mismo punto
+fijo al infinito.\\ \\
+
+Si $G$ es un grupo de elementos hiperb\'olicos con una recta fija
+dada. \\ \\
+
+ninguno de los anteriores contiene elementos elipticos sin embargo
+ninguno es discontinuo en $D$.
+(\textcolor[rgb]{1.00,0.00,0.00}{prueba?}) \\ \\
+
+Si $G$ contiene reversiones  y $H \subseteq G$ y adem\'as $H
+\subseteq PSL(2,\mathbb{R})$ se tiene que $H$ es subgrupo de $G$ y
+adem\'as es normal y de \'indice 2, es normal ya que si $f\ in H$
+para cualquier elemento $g \in G$ se tiene que $gfg^{-1}$ es del
+mismo tipo que $f$ por lo que $gfg^{1} \in H$, es de \'indice 2 y
+para ver esto basta probar que si $f,g \in G - H$ entonces $f \cong
+g$ equivalentemente que $fg^{-1} \in H$, dado que $f , g$ revierten
+orientaci\'on  se tiene que $fg^{-1}$ conserva la orientaci\'on y
+por lo tanto esta en
+$H$. \\ \\
+
+Una clase de equivalengia $Gx$ es la suma de las clases $Hx$ y $Hgx$
+con $g$ una reversi\'on en $G$ ($H \cup Hg = G \Rightarrow Hx \cup
+Hgx = Gx $ ), por lo que se concluye que $G$ y $H$
+son ambos discontinuos en $D$ o ambos no lo son. \\ \\
+
+En otras palabras $H$ es discontinuo en $D$ si y solo si $G$ lo es.
+\\ \\
+\textbf{ Si $G$ no tiene rectas ni puntos invariantes tampoco los
+tiene $H$.} Supongamos que $H$ deja invariantes un punto en $D +E$,
+pero ning\'un otro punto (y por tanto ninguna recta), como $G$ no
+deja puntos invariantes, existe $g \in G $ tal que $gc \neq c$ luego
+el subgrupo $gHg^{-1}$ dea invariante $gc$ pero ningun otro punto en
+$D+E$ pero como $H \vartriangleleft G$ se tiene que  $gHg^{-1}$ y
+como $gc \neq c $ implica que $H$ fija $c$ y $gc$ lo cual es una
+contradicci\'on, concluimos que $H$ no deja puntos invariantes. Un
+razonamiento analogo nos enseña que $H$ no deja rectas invariantes.
+\\ \\
+
+
+
+Desde ahora  $G$ denotar\'a un subgrupo de $PSL(2,\mathbb{R})$ sin
+puntos ni rectas invariantes. \\ \\
+
+\begin{thm}[caso 1] Cuando G tiene elementos elipticos \textcolor[rgb]{1.00,0.00,0.00}{-Enunciado teorema-}
+\end{thm}
+
+\emph{Prueba;} \\ \\
+
+Primero probaremos que si los centros de los elementos elipticos se
+acumulan $\Rightarrow$ $G$ no es discontinuo en $D$ \\ \\
+
+Supongamos que los puntos fijos de los elementos elipticos se
+acumulan en $D$ (tiene un punto de acumulaci\'on en $D$), es posible
+encontrar una sucesi\'on de puntos fijos que convergan al punto de
+acumulaci\'on digamos $x$(\textcolor[rgb]{1.00,0.00,0.00}{por ser
+espacio m\'etrico})y sean estos $y_{1},y_{2},...$ y
+$f_{1},f_{2},...$ los respectivos elementos el\'ipticos. Por un lado
+$d_{H}(y_{i},x) \leq \eps $ para $i$ adecuada, considerando $\lbrace
+f_{i}x\rbrace$ podemos notar que
+
+$$ d_{H}(f_{i}x,x) \leq d_{H}(f_{i}x,y_{i}) + d_{H}(y_{i},x) = 2d_{H}(y_{i},x)$$
+
+lo anterior debido a que $f_{i}$ fija $y_{i}$ y que es una
+isometr\'ia. Luego entonces $f_{i}x \rightarrow x$, es decir $Gx$ se
+acumula en $x$  por tanto $G$ no es discontinuo en $x$ y por lo
+tanto no lo es en $D$.\\ \\
+
+
+Si los puntos fijos de los elementos el\'ipticos no se acumulan
+$\Rightarrow$ $G$ es discontinuo en $D$.\\ \\
+
+elegimos un elemento el\'iptico $f $ y sea $c$ su punto fijo, como
+$G$ no tiene puntos invariantes existe $g \in G $ tal que $gc \neq
+c$ y adem\'as $gc$ es punto fijo de $gfg^{-1} $ que es de igual
+manera un elemento el\'iptico. Sea $G(c)$ el subgrupo de $G$ de
+elementos el\'ipticos con punto fijo $c$ entonces $\sharp G(c) <
+\infty$, para ver esto notemos 2 cosas;
+
+\begin{enumerate}
+\item $hgc$ es punto fijo de alg\'un elemento el\'iptico en $G$ a
+saber $hgfg^{-1}h^{-1}$
+\item $d_{H}(gc,c)=d_{H}(hgc,hc)=d_{H}(hgc,c)$
+\end{enumerate}
+
+esto implica que el conjunto $G(c)gc$ esta contenido en una
+circunferencia con centro $c$, si $G(c)gc$ es infinito y dado que la
+circunferencia es compacta $G(c)gc$ tendria un punto de
+acumulaci\'on en dicha circunferencia lo cual contradice nuestra
+hip\'otesis, entonces necesariamente  $\sharp G(c) < \infty$, luego
+se tiene que $Gc$ se compone de puntos fijos de elementos
+el\'ipticos (gc es punto fijo de $gfg^{-1}$ ) en $G$. \\
+
+Si $gc \in Gc$ se tiene  $\sharp G(c) = \sharp G(gc)$ ya que se
+tiene la biyecci\'on ... (\textcolor[rgb]{1.00,0.00,0.00}{mejorar
+prueba})
+
+
+
+\section{1}
+
+\begin{lem}[lema 1]
+Sean f y g elementos hiperb\'olicos cuyos ejes son divergentes y
+cuyos desplazamientos $\lambda$ miden lo mismo pero tienen sentidos
+opuestos, y sea $\delta$ la distancia entre sus ejes, entonces $fg$
+es el\'iptico, parab\'olico o hiperb\'olico dependiendo de
+$$senh \frac{1}{2} \delta senh \frac{1}{2} \lambda    \left \{ \begin{matrix} > 1 & \mbox{ }\mbox{ }
+\\ =1 & \mbox{ }\mbox{ } \\ <1 \mbox{} {}\end{matrix}\right. $$
+\end{lem}
+
+\emph{Prueba.} \\ \\
+
+Como los ejes son divergentes existe una normal com\'un a ambos y a
+esta recta le llamamos $s'$, denotemos a los ejes de $f$ y $g$ como
+$A_{f}$ y $A_{g}$ respectivamente, entonces la normal que
+mencionamos antes corta a $A_{f}$ en $a$ y a $A_{g}$ en $a'$ y
+elegimos $b,b'$ en $A_{f}$ y $A_{g} $ respectivamente  de tal manera
+que $d_{H}(a,b)=d_{H}(a',b')= \frac{1}{2} \lambda$ y adem\'as en la
+direcci\'on que se desplaza $f$. Sean $s,s''$ las rectas normales a
+$A_{f},A_{g}$ en $b, b'$ y por abuso de notaci\'on las reflexiones
+respecto a estas rectas y $s'$ se denotaran de la misma manera. \\ \\
+
+Queremos ver que tenemos la relaci\'on $f=ss'$, es claro que $ss'$
+preserva $A_{f}$ ya que $s'$ lo preserva y $s$ tambi\'en por ser
+normal a este eje (\textcolor[rgb]{1.00,0.00,0.00}{las
+circunferencias ortogonales son invariantes bajo inversiones
+respecto a ellas}), para ver que tiene el mismo sentido que $f$
+basta ver hacia donde desplaza un punto y es facil tomando a que
+queda fijo bajo $s'$ y bajo $s$ se desplaza en la misma direcci\'on
+que $f$, por \'ultimo hay que verificar que $d_{H}(x,ss'x) = \lambda
+$ pero como $ss'$ preserva la orientaci\'on y tiene dos puntos fijos
+(los puntos finales del eje fijo) necesariamente tiene que ser un
+alemento hiperb\'olico y para saber cuanto mide su desplazamiento de
+nuevo basta verificarlo para un punto en la recta fija y tomando a
+de nuevo $a$ notamos que $d_{H}(a,ss'a)= d_{H}(a,sa)= \lambda$, en
+conclusi\'on $f=ss'$ y un proceso analogo nos permite probar que
+$g=s's''$ (\textcolor[rgb]{1.00,0.00,0.00}{dibujos}). \\ \\
+
+Queremos saber ahora que tipo de transformaci\'on es $fg$, por lo
+anterior tenemos que $fg= ss's's'' = ss''$, ahora todo depende de la
+posici\'on de los ejes de $f$ y $g$. \\ \\
+
+
+\textbf{ Caso 1.}[las rectas se intersectan el alg\'un punto de
+$D+E$](\textcolor[rgb]{1.00,0.00,0.00}{dibujo}) \\ \\
+
+
+Sea $m$ el punto medio del segmento $aa'$, la normal a $s' $ que
+pasa por $m$ bisecta el \'angulo que forman los ejes en el punto de
+intersecci\'on $p$ (\textcolor[rgb]{1.00,0.00,0.00}{dibujo}), para
+ver esto reflejamos las rectas $l$ y $\sigma$ respecto de $l$
+obtenemos $l$ y $s''$, como la reflexi\'on es conforme el \'angulo
+entre $l$ y $s''$ es el mismo que el \'angulo entre $l$ y $s$. Es
+claro que el punto de intersecci\'on $p$ sera el punto fijo de la
+transformaci\'on y sea $\frac{1}{2} \phi_{fg}$ el \'angulo entre $s$
+y $s'$ (\textcolor[rgb]{1.00,0.00,0.00}{la inversion respecto a dos
+circunferencias es una rotacion con angulo el doble del angulo de
+esta interseccion}) (\textcolor[rgb]{1.00,0.00,0.00}{dibujo}). \\
+
+
+Luego $abpm$ es un cuadrilatero con 3 \'angulos rectos y el \'angulo
+restante agudo (cuadrilatero de lambert) cuyas medidas son
+$\frac{1}{4} \phi_{fg}$ con lados $\frac{1}{2} \delta$ y $
+\frac{1}{2} \lambda$ por lo cual tenemos
+(\textcolor[rgb]{1.00,0.00,0.00}{dibujo}) $senh \frac{1}{2} \delta
+senh \frac{1}{2} \lambda = cos \frac{1}{4} \phi_{fg} \leq 1$ y es
+igual a 1 en el caso de que se intersecten en el infinito ( $\phi
+=0$)y en dado caso la transformaci\'on seria parab\'olica. \\ \\
+
+
+\textbf{Caso 2} \\ \\
+
+
+En el caso que los ejes sean divergentes, existe una recta normal a
+ambos  y se tiene que la recta $l$ bisecta al segmento entre $s$ y
+$s'$ de esta recta normal, entonces para estar seguros probaremos;
+
+\begin{enumerate}
+\item Esta recta normal es el eje de $fg$
+\item En efecto $l$ bisecta al segmento entre $s$ y $s'$ de esta
+recta normal
+\end{enumerate}
+
+Para (1) Probaremos que $fg$ es hiperb\'olica viendo que tiene dos
+puntos fijos y que se encuentran en la normal mencionada antes. Sean
+$x$ y $x' $ los puntos finales de dicha recta normal y notemos que
+$s''x=x'$ ya que $s''x$ debe cumplir que esta sobre la recta normal
+a $s''$ y que $d_{H}(x,s'')=d_{H}(s''x,s'')$ pero $d_{H}(x,s'') =
+\infty$, por la misma raz\'on $sx'=x$ entonces $ss''x=x$ y tambien
+se cumple $ss''x'=x'$ por lo tanto $fg$ tiene 2 puntos fijos y su
+eje es la recta que los une, que en este caso es la normal
+mencionada. (\textcolor[rgb]{1.00,0.00,0.00}{dibujo}) \\ \\
+
+Para (2) queremos probar que $d_{H}(x,y) = d_{H}(y,x')$ donde $y$ es
+el punto de intersecci\'on de la normal con $l$, al reflejar
+respecto de $l$ y notando que $x \mapsto x'$ bajo $s$ y $d_{H}(x,y)
+= d_{H}(y,sx)$ tenemos el resultado. \\ \\
+
+
+Finalmente tenemos las rectas $s'',A_{g},s,l$ y $A_{fg}$ y estas
+forman un pentagono con 4 \'angulos rectos y con lados
+$\frac{1}{2}\lambda_{fg},\frac{1}{2}\delta,\frac{1}{2}\lambda$
+(\textcolor[rgb]{1.00,0.00,0.00}{dibujo}) luego tenemos
+(\textcolor[rgb]{1.00,0.00,0.00}{apendice})
+$$ senh \frac{1}{2} \delta senh \frac{1}{2} \lambda = cosh \frac{1}{4} \lambda_{fg} >1$$
+$ _{\square} $ \\ \\
+
+
+\section{2}
+
+\begin{lem}[lema 2]
+Sean $f$ y $g$ dos elementos hiperb\'olicos con ejes $A_{f}$ y
+$A_{g}$ y desplazamientos iguales $\lambda $, y con \'angulo de
+intersecci\'on $\phi $ entonces el conmutador $[f,g]=fgf^{-1}g^{-1}$
+es el\'iptico , parab\'olico o hiperb\'olico dependiendo si
+
+$$sen \phi senh^{2}\frac{1}{2} \lambda  \left \{ \begin{matrix} >1
+\\ =1 \\ < 1 \end{matrix}\right. $$
+\end{lem}
+
+\emph{Prueba.}\\ \\
+
+Sea $s'$ el punto de intersecci\'on de $A_{f}$  y $A_{g}$, sea $s$
+el punto sobre $A_{f}$ tal que $d_{H}(s',s)= \frac{1}{2} \lambda$ y
+trazado siguiendo la direcci\'on de $A_{f}$, y sea $s''$ el punto
+sobre $A_{g}$ tal que $d_{H}(s',s'')=\frac{1}{2} \lambda$ y trazado
+siguiendo la misma direcci\'on que $A_{g}$.(\textcolor[rgb]{1.00,0.00,0.00}{dibujo}) \\ \\
+
+Y tomemos las rotaciones de \'angulo $\pi$  respecto a estos puntos
+y las denotaremos igual que denotamos a sus puntos fijos. \\ \\
+
+Queremos primero probar que $f=ss'$, para esto deseamos ver que
+puntos fija $ss'$. La rotaci\'on por angulo $\pi$ funciona de la
+siguiente manera; dado un punto $x$ se traza la recta que va de $x$
+al centro de rotaci\'on $c$ el rotado de $x$ llamemosle $y$ esta
+sobre la misma recta y $d_{H}(x,c)=d_{H}(y,c)$, con este proceso
+podemos ver que $ss'$ fija los mismos puntos que $f$ por lo tanto el
+eje de $f$ es el mismo ee de $ss'$ solo falta ver cuanto es el
+desplazamiento de $ss'$ y como antes, basta verificarlo para un
+punto y en esta ocasi\'on tomamos el punto $s'$ y tenemos que
+$d_{H}(s,ss'(s'))=d_{H}(s,s(s'))= 2d_{H}(s',s)=2(\frac{1}{2}
+\lambda)= \lambda $ por lo tanto $f=ss'$. Un proceso analogo nos
+enseña que $g=s's''$ y como $s's'$ es la indentidad tenemos que $fg
+= ss''$, m\'as a\'un $f^{-1} = s's,g^{-1}=s''s'$ y entonces
+$f^{-1}g^{-1}= s'ss''s'=s'fgs'=s'fgs'^{-1}$, luego $ss'$ es un
+elemento hiperb\'olico con recta invariante la recta que pasa por
+$s$ y $s''$ y desplazamiento $2d_{H}(s,s'')$, m\'as a\'un
+$f^{-1}g^{-1}$ es hiperb\'olico obtenido de $fg$ conjungando por
+$s'$ tenemos entonces;
+
+\begin{enumerate}
+\item $f^{-1}g^{-1}$ tiene un desplazamiento con la misma medida que
+$fg$
+\item su eje $A_{f^{-1}g^{-1}}$ se obtiene de $A_{fg}$ rotando por $s'$.
+\end{enumerate}
+
+Para probar (1) queremos ver cuanto mide $d_{H}(x,s'fgs'x)$ y
+tenemos que $d_{H}(x,s'fgs'x)= d_{H}(s'x,fg(s'x))$ y esta \'ultima
+cantidad es el desplazamiento de $fg$. \\ \\
+
+(2) se cumple  ya que $f^{-1}g^{-1} (s'A_{fg})= s'fgs'(s'A_{fg})=
+s'fg(A_{fg})=s'A_{fg}$. \\ \\
+
+Entonces estos ejes son divergentes y sus correspondientes
+transformaciones tienen sentidos opuestos, aplicamos entonces el
+\textbf{lema 1} a $fg$ y a $f^{-1}g^{-1}$ entonces $[f,g]$ es
+el\'iptico , parab\'olico o hiperb\'olico seg\'un sea
+
+$$senh \eta senh \frac{1}{2} \lambda_{fg} \lesseqgtr 1$$(\textcolor[rgb]{1.00,0.00,0.00}{dibujo})
+
+Donde $\eta$ es la perpendicular desde $s'$ en el tri\'angulo
+$ss's''$ y por trigonometr\'ia hiperb\'olica
+(\textcolor[rgb]{1.00,0.00,0.00}{apendice}) se cumple $senh \eta
+senh\frac{1}{2} \lambda_{fg} = sen \phi senh^{2} \frac{1}{2}\lambda$
+$_{\square}$
+
+\section{3}
+
+\begin{lem}[lema 3]
+Sean $f,g$ elementos parab\'olicos con puntos fijos $c_{f}$ y
+$c_{g}$ entonces el conmutador $[f,g]$ es hiperb\'olico.
+\end{lem}
+
+\emph{Prueba.} \\ \\
+
+(\textcolor[rgb]{1.00,0.00,0.00}{dibujo}) Sea $s'$ la recta que une
+$c_{f}$ y $c_{g}$ y denotemos la reflexi\'on respecto a esta recta
+tambi\'en como $s'$. Sea $O_{f}$ un oriciclo dado con punto al
+infinito $c_{f}$, y $x \in O_{f}$ y sea $x'$ el punto medio de la
+recta (\textcolor[rgb]{1.00,0.00,0.00}{falta probar que existen las
+rectas cuyas reflexiones nos dan la tras¿nsformacion buscada})
+
+Tenemos entonces que $f=ss´$, y analogamente obtenemos  que existe
+$s''$ tal que $g=s's''$ luego tenemos
+$[f,g]=ss''s'ss''s'=(ss''s')^{2}$, la composici\'on de reflexiones
+conserva el sentido por lo tanto la composici\'on de 3 reflexiones
+invierte el sentido y es por tanto una reflexi\'on o una
+h-reflexi\'on entonces su cuadrado es la identidad o un elemento
+hiperbolico, como $f$ y $g$ no permutan
+(\textcolor[rgb]{1.00,0.00,0.00}{¿porque?}) no puede ser una la
+identidad por lo tanto es un elemento hiperb\'olico. $_{\square}$
+
+\section{4}
+
+\begin{lem}[lema 4]
+Sean $f$ y $g$ elementos hiperb\'olicos con ejes paralelos y con
+punto com\'un $u$, entonces el conmutador $[f,g]$ es un elemento
+parab\'olico con centro en $u$
+\end{lem}
+
+(\textcolor[rgb]{1.00,0.00,0.00}{dibujo})
+
+\emph{Prueba.} \\ \\
+
+Primero veamos que  $f \neq gf^{-1}g^{-1}$, es claro que
+$gf^{-1}g^{-1}$ fija $u$ ya que tanto $f$ como $g$ lo fijan, sea $x$
+el punto final del eje de $f$ distinto de $u$, es claro que $g^{-1}$
+no fija este punto, y $gx \neq u$ (puesto que $g^{-1}u \neq x$)
+concluimos con esto $f \neq gf^{-1}g^{-1}$, claramente su
+desplazamiento mide lo mismo (debido a que $g$ es isometria) pero
+con sentidos opuestos (ya que $gf^{-1}g^{-1}$ respeta el sentido de
+$f^{-1}$). (\textcolor[rgb]{1.00,0.00,0.00}{dibujo})
+(\textcolor[rgb]{0.00,0.00,1.00}{inconcluso}).
+
+\section{5}
+
+\begin{lem}[lema 5]
+Si en un grupo $G < PSL(2,\mathbb{R})$ sin puntos invariantes, 2
+ejes de elementos hiperb\'olicos son paralelos entonces el grupo
+contiene un elemento el\'iptico
+\end{lem}
+
+
+\emph{Prueba.} \\ \\
+
+
+Del \textbf{lema 4} tenemos que $G$ contiene elementos parab\'olicos
+y con punto en com\'un $u$ como centro. \\ \\
+
+Consideremos un Orociclo $K$ con punto en el infinito $u$, sobre $K$
+el elemento parab\'olico tiene un desplazamiento fijo . \\ \\
+
+
+Sea $S_{u} < G$ el subgrupo de $G$ que consta de elementos
+parab\'olicos con punto en el infinito $u$ y sea $x \in K$, la clase
+de equivalencia $S_{u}x$ es un subconjunto de $K$ y podemos
+distinguir dos casos.
+
+\begin{enumerate}
+\item Los puntos forman una sucesi\'on de puntos equidistantes
+cuando $S_{u}$ es dinscontinuo.
+
+\item El conjunto de puntos es denso en todo $K$ cuando $S_{u}$ no
+es discontinuo.
+\end{enumerate}
+
+Para probar (1), sea $d=min \lbrace d_{H}(x,fx) | f \in S_{u}
+\rbrace$ este minimo existe por que si no es asi se tendria un punto
+de acumulaci\'on lo cual por hip\'otesis no es posible. Si $y \in
+S_{u}x $ es claro que $min \lbrace d_{H}(y,fy) | f \in S_{u} \rbrace
+= d$ y de esto concluimos que el conjunto de puntos es equidistante
+de distancia $d$. \\ \\
+
+Para el caso (2) por hip\'otesis tenemos que $S_{u}x$ se acumula en
+$x$ y queremos ver que se acumula en todo $K$. Sea $k \in K$ un
+punto arbitrario y $B_{\eps}(k)= \lbrace z \in D| d_{H}(k,z) < \eps
+\rbrace$ y tomemos $B_{\eps}(k) \cap K$, queremos ver que esxiste $x
+\in S_{u}x$ tal que $d_{H}(k,x) < \eps$ , si dicha $x$ no existe
+entonces los desplazamientos  en $K$ de los elementos de $S_{u}$
+estarian acotados inferiormente por $\eps$ lo cual implicaria que
+$S_{u}$ es discontinuo lo que contradice la hip\'otesis, por lo
+tanto $S_{u}$ en denso en todo $K$. \\ \\
+
+Ahora supongamos que estamos en el caso (1) y sea $g_{0}$ el
+elemento con el menos desplazamiento respecto de $K$
+(\textcolor[rgb]{1.00,0.00,0.00}{dibujo}) y $f$ un elemento
+hiperb\'olico en $G$ tal que su eje $A_{f}$ tiene a $u$ como punto
+fijo y cuyo sentido es tal que se aleja de $u$
+(\textcolor[rgb]{1.00,0.00,0.00}{existe?}), entonces $fg_{0}f^{-1}$
+fija $u$ y es un elemento parab\'olico y por tanto $fg_{0}f^{-1} \in
+S_{u}$. \\ \\
+
+La imagen de $A_{f}$ bajo $fg_{0}f^{-1}$ es claramente la misma que
+la de su imagen bajo $fg_{0}$, la recta $fg_{0}A^{f}$ se encuentra
+entre $A_{f}$ y $g_{0}A_{f}$ (\textcolor[rgb]{1.00,0.00,0.00}{Por
+que?-figura hiperciclo}), luego el desplazamiento de $fg_{0}f^{-1}$
+es menor que el de $g_{0}$ lo cual es una contradicci\'on, por lo
+tanto $S_{u}x$ es denso en $K$, es decir los desplazamientos de los
+elementos de $S_{u}$ son tan pequeños como se quiera. \\ \\
+
+
+Como $G$ no tiene a $u$ como punto invariante, sea $g \in G$ tal que
+$gu \neq u$. Sean $f_{1},f_{2}$ elementos hiperb\'olicos
+pertenecientes a los dos ejes del lema, al menos uno de los
+elementos hiperb\'olicos $gf_{j}g^{-1}$ no deja invariante $u$, ya
+que $g$ solo puede mover $u$ a los m\'as a uno de los puntos
+extremos de $A_{f_{j}}$. Entonces existe en $G$ un elemento
+hiperb\'olico $f$ que no deja $u$ invariante. Elijamos ahora un
+orociclo $K$ tal que intersecte $A_{f}$
+(\textcolor[rgb]{1.00,0.00,0.00}{dibujo}) y elejimos $h$ tal que su
+desplazamiento respecto a $K$ ayude a que los ejes $A_{f}$ y
+$A_{hf}$ de $f$ y $f'=hfh^{-1}$ respectivamente se intersecten en un
+\'angulo arbitrariamente pequeño
+(\textcolor[rgb]{1.00,0.00,0.00}{?}), e particular elegimos $h$ tal
+que
+$$sen\phi senh^{2} \frac{1}{2} \lambda_{f} < 1$$
+
+ya que $senh^{2} \frac{1}{2}\lambda_{f}$ es fijo y $sen\phi
+\rightarrow 0$ cuando $\phi \rightarrow 0$, y del \textbf{lema 2} se
+sigue que $[f.f']$ es el\'iptico. $_{\square}$ \\ \\
+
+
+\section{6}
+
+Ahora sea $G < PSL(2,\mathbb{R})$ sin puntos invariantes y sin
+elementos el\'ipticos. \\ \\
+
+Antes que nada veamos que $G$ no es abeliano. Si los ejes son
+divergentes y  $fg = gf$ entonces $fgf^{-1} = g$, pero no es posible
+ya que $fgf^{1}$ fija $fx,fy$ con $x,y $ puntos fijos de $g$, pero
+esto implica $fx=y$ y $fy=x$ pero esto implica $f^{2}x=x$, pero
+$f^{2}$ fija los mimos puntos que $f$ por tanto no puede fijar los
+puntos de $g$. (\textcolor[rgb]{1.00,0.00,0.00}{dibujo}). \\ \\
+
+Es analogo si los ejes son paralelos ya que $f$ no puede
+intercambiar $x$ y $y$ al mismo tiempo.
+(\textcolor[rgb]{1.00,0.00,0.00}{dibujo}). \\ \\
+
+(\textcolor[rgb]{1.00,0.00,0.00}{considerar el caso de una
+parabolico e hiperbolico y 2 parabolicos}) \\ \\
+
+
+M\'as a\'un debe haber elementos hiperb\'olicos en $G$, de otro modo
+solo tendr\'ia elementos parab\'olicos que por hip\'otesis no
+tendrias un punto fijo en com\'un y el \textbf{lema 3} implicaria
+una contradicci\'on en este caso. \\ \\
+
+Sea $f$ hiperb\'olico en $G$ y $A_{f} $ su eje y $\lambda_{f}$ la
+medida de su desplazamiento, sea $g \in G$ tal que $fg \neq gf$,
+entonces $f' = gf^{\pm 1}g^{-1}$ es una traslaci\'on con el mismo
+desplazamiento que $f$ y con eje $gA_{f} \neq A_{f}$ (Por no ser
+permutables) [Si $A_{f}=gA_{f} \Rightarrow gfg^{-1}=f$ o
+$gfg^{-1}=f^{-1}$ el caso 1 no es posible, checar el caso 2]. \\ \\
+
+$A_{f},A_{f'}$ no pueden ser paralelas por el \textbf{lema 5}, si
+son divergente sea $\delta$ la distancia entre ellas y elijamos $f'$
+tal que el exponente de $f$ haga $f$ y $f'$ con desplazamientos
+opuestos, por las condiciones impuestas en $G$, $ff'$ no es
+el\'iptico y del \textbf{lema 1} obtenemos
+
+$$ (1) \  senh \frac{1}{2}
+\delta senh \frac{1}{2} \lambda_{f} \geqq 1$$
+
+Si $A_{f},A_{f'}$ son concurrentes sea $\phi$ su \'angulo de
+intersecci\'on, dado que $[f,f']$ no es una rotaci\'on,  del
+\textbf{lema 2} tenemos
+
+$$(2) \ sen \phi senh^{2}\frac{1}{2} \lambda_{f} \geqq 1 $$
+
+Estas desigualdades se aplican a $g$ fijo y $f$ variando
+\textcolor[rgb]{1.00,0.00,0.00}{(que cumplan la condici\'on)}
+
+(\textcolor[rgb]{1.00,0.00,0.00}{dibujo}) \\ \\
+
+
+
+Sea $A$ un eje de un elemento hiperb\'olico en $G$, los elementos
+hiperb\'olicos que comparten este eje forman un subgrupo abeliano
+$S_{A}$ de $G$, sea $g \in G$ un elemento que no tenga como eje a
+$A$, es decir que no permuta con los elementos de $S_{A}$, se tiene
+que $gA \neq A$ y cuya distancia a $A$ digamos $d_{H}(gA,A)= \delta$
+o corta a $A$ en un \'angulo $\phi$ dependiendo si $A_{g}$ y $A$ son
+divergentes o concurrentes, dependiendo cual sea el caso aplicaremos
+$(1)$ o $(2)$. \\ \\
+
+
+Si $f$ varia sobre todos los elementos de $S_{A}$, podemos notar que
+todos tienen desplazamiento mayor que un n\'umero positivo distinto
+de 1 (\textcolor[rgb]{1.00,0.00,0.00}{¿por que?}) (por las
+condiciones 1 y 2 la cota inferior no puede ser 1) \\
+
+Entonces $S_{A}$ es discontinuo. Sea $\lambda_{0}$ el desplazamiento
+mas pequeño de elementos de $S_{A}$ (si existe). \\
+
+Podemos aplicar las mismas desigualdades para $f \in S_{A}$ fijo y
+$g $ variando sobre los representantes $g_{1},g_{2},...$ de las
+clases de $S_{A} < G$ ($g_{1} \backsim g_{2} \Leftrightarrow
+g_{1}S_{A} = g_{2}S_{A} \Leftrightarrow g_{1}g_{2}^{-1} \in S_{A}$).
+
+\begin{rem}
+Si $g_{1} \backsim g_{2} \Rightarrow g_{1}A=g_{2}A$ ya que
+$g_{1}g_{2}^{-1} = f \in S_{A} \Rightarrow g_{1}g_{2}^{-1}A = fA
+\Rightarrow g_{1}g_{2}^{-1}A = A \Rightarrow g_{2}^{-1}A =
+g_{1}^{-1}A$
+\end{rem}
+
+Entonces los ejes de los elementos hiperb\'olicos $f_{v}=
+g_{v}fg_{v}^{-1}$ varian sobre los diferentes ejes de la clase de
+equivalencia $GA$ de $A$. \\ \\
+
+Dado que $f_{v}$ tiene el mismo desplazamiento $\lambda_{f}$ que $f$
+para todo \'indice $v$, de $(1)$ y $(2)$ obtenemos que
+$senh\frac{1}{2} \delta $ y $sen \phi$ tienen una cota inferior por
+lo que $\delta$ y $\phi$ tambi\'en la tienen seg\'un sean
+divergentes o concurrentes los ejes $g_{v}A$, esto implica que los
+ejes no se acumulan en $D$ (\textcolor[rgb]{1.00,0.00,0.00}{dibujo})
+\\ \\
+
+
+Sea $x \in A$. Todo punto en $Gx$ esta en alg\'un elemento del
+conjunto $g_{v}A$. Para un eje dado los puntos $Gx$ que se
+encuentran en este eje forman una sucesi\'on de puntos equidistantes
+a distancia $\lambda$ [Los puntos en $Gx \cap g_{v}A$ son los puntos
+$gx,hx$ tal que $g \backsim h $, luego para $gx,hx \in g_{v}A
+\Rightarrow d_{H}(gx,hx)=d_{H}(x,g^{-1}hx), g^{-1}h \in S_{A}
+\Rightarrow \lambda_{g^{-1}h} \geqq \lambda_{0}$]
+(\textcolor[rgb]{1.00,0.00,0.00}{dibujo}). \\
+
+Luego un c\'irculo con centro $x$ y radio $\frac{1}{2} \lambda_{0}$
+no puede contener mas de un punto de dicha sucesi\'on en su
+interior, entonces el n\'umero de puntos en $Gx$ dentro de este
+c\'irculo es a lo m'as igual al n\'umero de ejes $g_{v}A$ que cortan
+al c\'irculo, este n\'umero es finito ya que los ejes $g_{v}A$ no se
+acumulan en $D$, $\therefore$ $x$ no es punto de acumulaci\'on de
+$Gx$. $_{\square}$
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+% ----------------------------------------------------------------
+\bibliographystyle{amsplain}
+\bibliography{a}
+\end{document}
+% ----------------------------------------------------------------

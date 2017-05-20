@@ -1,0 +1,112 @@
+% ----------------------------------------------------------------
+% Article Class (This is a LaTeX2e document)  ********************
+% ----------------------------------------------------------------
+\documentclass[12pt]{article}
+\usepackage[english]{babel}
+\usepackage{amsmath,amsthm}
+\usepackage{amsfonts}
+% THEOREMS -------------------------------------------------------
+\newtheorem{thm}{Theorem}[section]
+\newtheorem{cor}[thm]{Corollary}
+\newtheorem{lem}[thm]{Lemma}
+\newtheorem{prop}[thm]{Proposition}
+\theoremstyle{definition}
+\newtheorem{defn}[thm]{Definition}
+\theoremstyle{remark}
+\newtheorem{rem}[thm]{Remark}
+\numberwithin{equation}{section}
+% ----------------------------------------------------------------
+\begin{document}
+
+\title[1]{2}%
+\author{San}%
+
+% ----------------------------------------------------------------
+\begin{abstract}
+  qq
+\end{abstract}
+\maketitle
+% ----------------------------------------------------------------
+\section{Soluciones de la ecuaci\'on hipergeom\'etrica }
+
+Consideremos la siguiente serie :
+
+$$F(a,b,c;x)= \sum_{n=0}^{\infty } \frac{(a)_{n} (b)_{n}}{(c)_{n}(1)_{n}} x^{n}$$
+
+En donde $x$ es una variable compleja , $(\alpha)_{n} = \alpha (\alpha +1)(\alpha +2)\cdots (\alpha +n-1)$, %cuando n= 0? %
+
+y $c \neq 0, -1, -2,...$. Esta serie es la llamada serie hipergeometrica.  El coeficiente $n$-esimo de esta serie al que llamaremos $A_{n}$ esta dado por $$A_{n}=\frac{a(a+1)\cdots (a+n-1) \cdot b(b+1)\cdots(b +n -1) }{c(c+1)\cdots (c+n-1) \cdot 1 (1+1) \cdots (n)}$$ De esta igualdad obtenemos:
+
+$$\frac{A_{n+1}}{A_{n}}= \frac{(a+n)(b+n)}{(c+n)(1+n)}$$
+
+Usando el criterio %del cociente%
+Podemos notar que el radio de convergencia de esta serie es 1, excepto en el caso de que $a$ o $b$ sean negativos ya que en cualquiera de estos casos la serie es finita. De cualquier modo tenemos que dicha serie define una funci\'on holomorfa en $x$ en al menos el disco de radio 1 centrado en 0 y tambi\'en es holomorfa en $(a,b,c)$ si $c \neq 0, -1, -2,...$ \\
+
+Nuestro interes por la serie definida anteriormente viene del hecho que dicha serie es una soluci\'on de la ecuaci\'on diferencial hipergeometrica
+
+$$ x(1-x)\frac{d^{2}u}{dx^{2}} + \lbrace c- (a+b+1)x \rbrace \frac{du}{dx} -abu=0 $$
+
+ A la cual denotamos $E(a,b,c;x)$ y la referimos como la serie hipergeom\'etrica con parametros $(a,b,c)$. Para ver que $F(a,b,c;x)$ es una soluci\'on de $E(a,b,c)$ procedemos como Euler e introducimos el operador $ D = x \frac{d}{dx}$, a continuaci\'on  enunciamos algunas  propiedades que ser\'an \'utiles:
+
+\begin{enumerate}
+\item $Dx^{n}= nx^{n}$
+\item $f(D)x^{n}=f(n)x^{n}$ donde $f$ es un polinomio de coeficientes constantes
+\end{enumerate}
+
+La propiedad n\'umero 1 es clara de la definici\'on, para la propiedad n\'umero 2 debemos dejar en claro como funciona el operador $D^{n}$ al aplicarlo a $x^{n}$. Cuando $n=2$ tenemos que $D^{2} x^{n} = x\frac{d}{dx} (x\frac{d}{dx} (x^{n}) )= x\frac{d}{dx}(x \cdot nx^{n-1})=x\frac{d}{dx} (nx^{n} ) = x\cdot n^{2}x^{n-1}=n^{2}x^{n}$, en general se tiene por un proceso an\'alogo al anterior que $D^{m}x^{n}=n^{m}x^{n}$.Sea
+
+$$ f(x)= \sum_{i=0}^{n} a_{i}x^{i} $$
+
+Donde $a_{n} \neq 0$, un polinomio de grado n y por $f(D)$ entendemos el operador $$f(D) = \sum_{i=0}^{n} a_{i}D^{i}$$
+
+Entendiendo $D^{i}$ como la composici\'on del operador $D$ $i$-veces consigo mismo. Aplicamos este operador a $x^{n}$ y obtenemos
+
+$$f(D)x^{n}=(\sum_{i=0}^{n}a_{i}D^{i}) x^{n} = \sum_{i=0}^{n}a_{i} D^{i}( x^{n}) = \sum_{i=0}^{n}a_{i}n^{i}x^{n} = f(n)x^{n}   $$
+
+
+Gracias a este operador $D$ podemos escribir la ecuaci\'on diferencial hipergeom\'etrica en t\'erminos de dicho operador para obtener;
+
+$$E(a,b,c): [(a+D)(b+D)- (c+D)(1+D)\frac{1}{x}]u=0$$
+
+Con esta nueva presentaci\'on verificamos que la serie $F(a,b,c;x)$ es una soluci\'on de dicha ecuaci\'on. \\
+
+Podemos escribir 
+
+$$F(a,b,c;x)= \sum_{n=0}^{\infty } \frac{(a)_{n} (b)_{n}}{(c)_{n}(1)_{n}} x^{n} = \sum A_{n} x^{n}$$
+
+Y evaluamos
+
+$$[(a+D)(b+D)- (c+D)(1+D)\frac{1}{x}] \sum A_{n}x^{n}$$
+$$= \sum [(a+D)(b+D)A_{n}x^{n}- (c+D)(1+D)A_{n}x^{n-1}]$$
+$$= \sum [(a+n)(b+n)A_{n}x^{n}- (c+n-1)(1+n-1)A_{n}x^{n-1}]$$
+$$= \sum [(a+n)(b+n)A_{n}x^{n}- (c+n)(1+n)A_{n}x^{n}]=0$$
+
+
+La \'ultima igualdad se da gracias a que obtenemos una serie telesc\'opica. Esta serie tiene singularidades en $0,1$ e $\infty$, nuestro objetivo ahora es encontrar soluciones en los puntos singulares como hicimos anteriormente con $x=0$. Denotaremos  a la soluci\'on  $F(a,b,c;x)$ como $f_{0}(x;0)$. \\
+
+Queremos hallar otra soluci\'on en $x=0$ pero para esto necesitamos calcular la aplicaci\'on del operador $D$ al t\'ermino $x^{s} u$;
+
+$$D(x^{s}u)= sx^{s}u + x^{s}Du = x^{s}(s +D)u$$
+
+esto es $Dx^{s}= x^{s} (s + D)$, con este c\'alculo podemos obtener una expresi\'on equivalente para 
+
+$$[(a+D)(b+D) - (c+d)(1+d) \frac{1}{x}] x^{1-c} $$
+
+La expresi\'on anterior es equivalente a $x^{1-c}[(a+1-c+D)(b+1-c+D)-(1+D)(2-c+D)\frac{1}{x}]$ y esto nos dice que 
+
+$$x^{1-c} F(a+1-c,b+1-c,2-c:x) $$
+
+Es tambi\'en una soluci\'on de $E(a,b,c)$, aunque la serie anterior esta definida solamente cuando $2-c$ no es un entero negativo o cero (cuando es $c=1$ la serie  coincide con $F(a,b,c;x)$) esto no afecta nuestra soluci\'on ya que tomamos $1-c \in i\mathbb{R}$ en cuyo caso siempre esta definida. A esta ultima soluci\'on la denotamos por $f_{0}(x;1-c)$.
+
+Queremos hallar tambi\'en soluciones alrededor del punto singular $x=1$, llevamos a cabo una transformaci\'on de la variable $x$ en $1-x$ abusando de la notaci\'on, y verificamos como luce ahora $E(a,b,c)=x(1-x) \frac{d^{2}u}{dx^{2}} + \lbrace c- (a+b+1)x \rbrace \frac{du}{dx} -abu$. Bajo esta transformaci\'on el primero y el tercer t\'ermino no cambian, pero el segundo t\'ermino ahora es 
+
+$$-\lbrace  c- (a+b+1)(1-x)\rbrace = a+b+1-c-(a+b+1)x $$
+
+Entonces podemos notar que la ecuaci\'on transformada es de nuevo la ecuaci\'on hipergeom\'etrica con parametros $ (a,b,a+b+1-c)$ y a menos que $c-a-b$ sea entero obtenemos como antes dos soluciones pero ahora alrededor de $x=1$
+
+$$F(a,b,a+b+1-c;1-x), \ \ (1-x)^{c-a-b}F(c-a,c-b,c+1-a-b;1-x)$$
+
+En nuestro caso tomamos $c-a-b \in i\mathbb{R} $ por lo que las soluciones anteriores siempre estan definidas en su radio de convergencia. A las soluciones anteriores las denotamos $f_{1}(x;0) $ y $f_{1}(x;c-a-b)$ respectivamente.
+
+\end{document}
+% ----------------------------------------------------------------
